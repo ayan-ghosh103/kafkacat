@@ -2500,7 +2500,7 @@ int main (int argc, char **argv) {
         if (in != stdin)
                 fclose(in);
 
-        rd_kafka_wait_destroyed(5000);
+        rd_kafka_wait_destroyed(5000000);
 
 #if ENABLE_AVRO
         kc_avro_term();
